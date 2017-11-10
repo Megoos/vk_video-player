@@ -5,7 +5,11 @@
   right: 0;
   height: 100%;
   width: 240px;
-  background-color: #1e1e1e
+  background-color: #1e1e1e;
+
+  @include point {
+    display: none;
+  }
 }
 
 //header
