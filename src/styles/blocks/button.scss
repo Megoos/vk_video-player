@@ -1,0 +1,26 @@
+
+.order__form-button {
+  margin-top: 12px;
+  cursor: pointer;
+  height: 33px;
+  width: 300px;
+  line-height: 33px;
+  background-color: rgb(38, 165, 165);
+  border: 0px;
+  border-radius: 0px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px inset;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  transition: all .3s ease;
+
+  &:hover {
+    background-color: rgba(38, 165, 165, .5);    
+  }
+
+  &:focus {
+    outline: 0px;
+  }
+}

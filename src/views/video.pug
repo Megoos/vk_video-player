@@ -1,0 +1,97 @@
+extends template
+
+block title
+  | Видеокаталог
+
+block content
+  .mv__wrap    
+    .mv__layer
+      .mv__cont
+        .mv__box
+          .mv__main
+            .mv__btn-wrap
+              .mv__btn-control.mv__btn-control_prev
+                .mv__pl-control
+            .mv__btn-wrap
+              .mv__btn-control.mv__btn-control_next
+                .mv__pl-control
+            .mv__player-box
+              .pr
+                .pr_bt
+                .pr_bt
+                .pr_bt
+            .mv__top-control_wrap
+              .mv__top-control
+                .mv__top-btn
+                  .mv__icon.mv__icon_close
+                .mv__top-btn
+                  .mv__icon.mv__icon_min
+                .mv__top-btn
+                  .mv__icon.mv__icon_side
+            .mv__playlist
+              .mv__playlist-header
+                .mv__playlist-btn-wrap
+                  .mv__playlist-btn
+                    .mv__icon.mv__icon_autoplay
+                  .mv__playlist-btn
+                    .mv__icon.mv__icon_reverse
+                .mv__playlist-title Мои видеозаписи
+              .mv__pl-scrol
+                .mv__pl-scrolbar-inner
+              .mv__playlist-list
+                .mv__playlist-cont
+                  a.mv__playlist-item
+                    .mv__playlist-item-img
+                      .mv__playlist-item-duration 3:31
+                    .mv__playlist-item-info
+                      .mv__playlist-item-title Tiesto feat.Martin Garrix - On my Way
+                      .mv__playlist-item-views 22343 просмотров
+          .mv__info
+            .mv__info-wide-colomn
+              .mv__title-block
+                .mv__views-count
+                .mv__title Hardwell feat. Jay Sean - Thinking About You
+              .mv__ation-block
+                .mv__block-wrap
+                  button.flat__button
+                    .mv__icon.mv__icon_like
+                    .mv__action-link Мне нравится
+                  button.flat__button
+                    .mv__icon.mv__icon_like
+                    .mv__action-link Поделится
+                  button.flat__button
+                    .mv__icon.mv__icon_like
+                    .mv__action-link Добавлено
+                  .mv__action-more
+                    .mv__action-link Ещё
+                    .mv__icon.mv__icon_arrow
+              .mv__author-block
+                .mv__block-wrap
+                  a.mv__author-photo-wrap
+                    img(src="", alt="").author-photo
+                  .mv__author-info
+                    .info-author-name
+                      a(href="") Михаил Гуськов
+                    .info-date 29 окт 2016 в 13:11
+              .mv__description-block
+                .mv__block-wrap     
+                  .mv__description
+                    .mv__description-text
+                      p Multi-platinum-selling artist Jay Sean and Dutch award-winning dance DJ Hardwell release the official music video for their current single ‘Thinking About You’. Premiered on MTV’s Snapchat Discover, the single was one of the most Shazamed songs at the annual Amsterdam Dance Event festival last week, adding to the growing success of the records current popularity. 
+              .mv__comment-block  
+                .mv__comment
+                  a.comment__user-link
+                    img(src="", alt="").comment__photo
+                  .mv__comment-placeholder Написать Комментарий...
+            .mv__info-narrow-column
+              .mv__recom-block
+                .mv__recom-title Другие видео
+                .mv__recom-item
+                  a(href="").mv__recom-img
+                    .recom-item-duration 3:31
+                  .mv__recom-item-info
+                      .mv__recom-item-title Tiesto feat.Martin Garrix - On my Way
+                      .mv__recom-item-views 22343 просмотров
+
+      
+              

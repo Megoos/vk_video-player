@@ -1,0 +1,13 @@
+//color
+
+//device resolutions
+$laptop: 1200px;
+$tablets: 768px;
+$phones: 480px;
+
+//import
+//@import "mixins/*";
+@import "layout/media";
+@import "layout/setup";
+
+@import "blocks/**/*";

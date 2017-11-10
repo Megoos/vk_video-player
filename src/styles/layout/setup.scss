@@ -1,0 +1,55 @@
+html {
+  font-size: 16px;
+  
+  @include tablets {
+    font-size: 14px;
+  }
+
+  @include phones {
+    font-size: 13px;
+  }
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family:  -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mv__wrap {  
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: auto;
+  background-color: rgb(71, 71, 71);
+}
+
+.mv__layer {
+  min-height: 100%;
+  margin: 0 5px;
+}
+
+.mv__cont {
+  display: block;
+  margin: 60px auto 85px;
+}
+
+
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
