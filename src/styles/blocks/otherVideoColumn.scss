@@ -1,5 +1,13 @@
 .mv__info-narrow-column {
   width: 240px;
+
+  @include point {
+    display: none;
+  }
+
+  @include tablets {
+    width: 128px;
+  }
 }
 
 .mv__recom-block {
@@ -11,6 +19,10 @@
   font-size: 16px;
   line-height: 23px;
   color: #000;
+
+  @include tablets {
+    font-size: 15px;
+  }
 }
 
 .mv__recom-item {
@@ -30,6 +42,10 @@
   background-size: cover;
   background-position: 50%;
   cursor: pointer;
+
+  @include tablets {
+    float: none;
+  }
 }
 
 .recom-item-duration {
@@ -47,6 +63,10 @@
 
 .mv__recom-item-info {
   margin-left: 108px;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .mv__recom-item-title {

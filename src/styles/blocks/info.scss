@@ -4,11 +4,12 @@
   background: #fff;
   position: relative;
   display: flex;
+  overflow: hidden;
 }
 
 //wide column
 .mv__info-wide-colomn {
-  width: 719px;
+  //max-width: 719px;
   border-right: 1px solid #e7e8ec;
   
 }

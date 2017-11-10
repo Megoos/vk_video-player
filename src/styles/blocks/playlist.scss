@@ -10,6 +10,10 @@
   @include point {
     display: none;
   }
+
+  @include tablets {
+    width: 121px;
+  }
 }
 
 //header
@@ -34,6 +38,10 @@
 
 .mv__playlist-btn-wrap {
   display: flex;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .mv__playlist-btn {
@@ -48,18 +56,6 @@
   }
 }
 
-.mv__icon_autoplay{
-  background: url(../img/video_icon.png) 0 -77px;
-  height: 11px;
-  width: 18px;
-}
-
-.mv__icon_reverse{
-  background: url(../img/video_icon.png) 0 -98px;
-  height: 11px;
-  width: 15px;
-}
-
 //scrol
 .mv__pl-scrol {
   margin-top: 0px;
@@ -67,6 +63,12 @@
   height: 375px;
   width: 7px;
   background-color: hsla(0,0%,78%,.06);
+  position: relative;
+  z-index: 10;
+
+  @include tablets {
+    margin-left: 114px;
+  }
 }
 
 .mv__pl-scrolbar-inner {  
@@ -77,11 +79,14 @@
   margin-left: 0;
   border-radius: 1px;
   cursor: pointer;  
-  transition: background-color 100ms linear;
+  transition: background-color 100ms linear; 
+  
+  &:hover {
+    background-color: #424242;
+  }
 }
 
 //list
-
 .mv__playlist-list {
   position: absolute;
   top: 30px;
@@ -89,6 +94,7 @@
   left: 0;
   right: 0;
   overflow: hidden;
+
 }
 
 .mv__playlist-item {
@@ -112,6 +118,10 @@
     .mv__playlist-item-title {
       opacity: 1;
     }
+  }
+
+  @include tablets {
+    padding-right: 0px;
   }
 }
 
@@ -140,6 +150,10 @@
 .mv__playlist-item-info{
   margin-left: 108px;
   white-space: normal;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .mv__playlist-item-title{

@@ -1,0 +1,68 @@
+.mv__icon_like {
+  background: url(../img/video_actions.png) no-repeat 0 0;
+  height: 10px;
+  width: 13px;
+}
+
+.mv__icon_share {
+  background: url(../img/video_actions.png) no-repeat 0 -44px;  
+  height: 13px;
+  width: 12px; 
+}
+
+.mv__icon_add {
+  background: url(../img/video_actions.png?8) no-repeat 0 -15px;
+  height: 12px;
+  width: 12px;
+}
+
+.mv__icon_arrow {
+  background-image: url(../img/dd_arrow.png);
+}
+
+.mv__pl-control {
+  background: url(../img/layer_controls.png) no-repeat;
+  height: 30px;
+  width: 20px;
+}
+
+.mv__pl-control_next {
+  background-position: 0 -55px;
+}
+
+.mv__pl-control_prev {
+  background-position: 0 -23px;
+}
+
+.mv__icon_close {
+  background: url(../img/video_icon.png) no-repeat;
+  background-position: 0px 0px;
+  height: 20px;
+  width: 20px;
+}
+
+.mv__icon_min {
+  background: url(../img/video_icon.png) no-repeat;
+  background-position: 0px -24px;
+  height: 5px;
+  width: 20px;
+}
+
+.mv__icon_side {
+  background: url(../img/video_icon.png) no-repeat;
+  background-position: 0 -52px;
+  height: 19px;
+  width: 20px;
+}
+
+.mv__icon_autoplay{
+  background: url(../img/video_icon.png) 0 -77px;
+  height: 11px;
+  width: 18px;
+}
+
+.mv__icon_reverse{
+  background: url(../img/video_icon.png) 0 -98px;
+  height: 11px;
+  width: 15px;
+}

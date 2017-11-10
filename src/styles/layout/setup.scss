@@ -2,13 +2,13 @@ html {
   height: 100%;
   font-size: 16px;
   
-  // @include tablets {
-  //   font-size: 14px;
-  // }
+  @include tablets {
+    font-size: 14px;
+  }
 
-  // @include phones {
-  //   font-size: 13px;
-  // }
+  @include phones {
+    font-size: 13px;
+  }
 }
 
 body {  

@@ -9,6 +9,10 @@
   &_prev {
     left: -64px;
   }
+
+  @include laptop {
+    display: none;
+  }
 }
 
 
@@ -23,27 +27,17 @@
   &:hover {
     opacity: 1;
   }
+  
 }
-
-.mv__pl-control {
-  height: 30px;
-  width: 20px;
-  background: url(../img/layer_controls.png) no-repeat;
-
-  &_next {
-    background-position: 0 -55px;
-  }
-
-  &_prev {
-    background-position: 0 -23px;
-  }
-}
-
 
 .mv__top-control_wrap {
   position: absolute;
   right: 0;
   top: 0;
+
+  @include laptop {
+    display: none;
+  }
 }
 
 .mv__top-control {
@@ -63,24 +57,6 @@
   }
 }
 
-.mv__icon_close {
-  background: url(../img/video_icon.png) no-repeat;
-  background-position: 0px 0px;
-  height: 20px;
-  width: 20px;
-}
-
-.mv__icon_min {
-  background: url(../img/video_icon.png) no-repeat;
-  background-position: 0px -24px;
-  height: 5px;
-  width: 20px;
+.mv__icon_min {  
   margin: 7px 0;
-}
-
-.mv__icon_side {
-  background: url(../img/video_icon.png) no-repeat;
-  background-position: 0 -52px;
-  height: 19px;
-  width: 20px;
 }
