@@ -32,10 +32,10 @@ gulp.task('sass', () => {
       browsers : ['> 5%'],
       cascade : false
     }))
-    .pipe(cssunit({
-      type     :    'px-to-rem',
-      rootSize  :    16
-    }))
+    // .pipe(cssunit({
+    //   type     :    'px-to-rem',
+    //   rootSize  :    16
+    // }))
     .pipe(csso())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./dist/css/'))
@@ -48,7 +48,7 @@ gulp.task('pug', () => {
   gulp.src('src/views/video.pug')
     .pipe(plumber())
     .pipe(pug({
-      // locals : locals
+      locals : JSON.parse(fs.readFileSync('./content.json', 'utf8')),
       pretty: true,
     }))
     .pipe(gulp.dest('dist'))

@@ -9,17 +9,20 @@ block content
       .mv__cont
         .mv__box
           .mv__main
+            //button left-right
             .mv__btn-wrap
               .mv__btn-control.mv__btn-control_prev
                 .mv__pl-control
             .mv__btn-wrap
               .mv__btn-control.mv__btn-control_next
                 .mv__pl-control
+            //window with video
             .mv__player-box
               .pr
                 .pr_bt
                 .pr_bt
                 .pr_bt
+            //button exit-small- ->
             .mv__top-control_wrap
               .mv__top-control
                 .mv__top-btn
@@ -28,24 +31,30 @@ block content
                   .mv__icon.mv__icon_min
                 .mv__top-btn
                   .mv__icon.mv__icon_side
+            //playlist onright at video
             .mv__playlist
+              //pleylist header
               .mv__playlist-header
+                .mv__playlist-title Мои видеозаписи
                 .mv__playlist-btn-wrap
                   .mv__playlist-btn
                     .mv__icon.mv__icon_autoplay
                   .mv__playlist-btn
-                    .mv__icon.mv__icon_reverse
-                .mv__playlist-title Мои видеозаписи
+                    .mv__icon.mv__icon_reverse                
+              //scrol for list
               .mv__pl-scrol
                 .mv__pl-scrolbar-inner
+              //this same pleylist
               .mv__playlist-list
                 .mv__playlist-cont
-                  a.mv__playlist-item
-                    .mv__playlist-item-img
-                      .mv__playlist-item-duration 3:31
-                    .mv__playlist-item-info
-                      .mv__playlist-item-title Tiesto feat.Martin Garrix - On my Way
-                      .mv__playlist-item-views 22343 просмотров
+                  -flag = true;
+                  each sound, index in playlist                    
+                    a(class=`mv__playlist-item ${index <1 ? "active" : ""}`)
+                      .mv__playlist-item-img(style=`background-image: url('${sound.img}');`)
+                        .mv__playlist-item-duration= sound.duration
+                      .mv__playlist-item-info
+                        .mv__playlist-item-title= sound.name
+                        .mv__playlist-item-views= sound.view                             
           .mv__info
             .mv__info-wide-colomn
               .mv__title-block
@@ -92,6 +101,3 @@ block content
                   .mv__recom-item-info
                       .mv__recom-item-title Tiesto feat.Martin Garrix - On my Way
                       .mv__recom-item-views 22343 просмотров
-
-      
-              

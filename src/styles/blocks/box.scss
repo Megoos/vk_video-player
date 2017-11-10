@@ -1,0 +1,35 @@
+.mv__wrap {  
+  display: block;
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+  position: relative;
+  overflow: auto;
+  background-color: rgb(71, 71, 71);
+}
+
+.mv__layer {
+  min-height: 100%;
+  margin: 0 5px;
+}
+
+.mv__cont {
+  display: block;
+  margin: 60px auto 85px;
+  width: 960px;
+}
+
+.mv__box {
+  background: #fff;
+}
+
+.mv__main {
+  position: relative;
+}
+
+.mv__player-box {
+  height: 405px;
+  width: 720px;
+  padding-right: 240px;
+  background: #000;
+}
