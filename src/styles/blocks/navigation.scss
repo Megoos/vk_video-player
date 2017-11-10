@@ -1,0 +1,86 @@
+.mv__btn-wrap {
+  position: absolute;
+  top: 0;
+
+  &_next {
+    right: 0;
+  }
+
+  &_prev {
+    left: -64px;
+  }
+}
+
+
+.mv__btn-control {
+  display: block;
+  position: absolute;
+  padding: 187.5px 22px;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: opacity 100ms linear;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.mv__pl-control {
+  height: 30px;
+  width: 20px;
+  background: url(../img/layer_controls.png) no-repeat;
+
+  &_next {
+    background-position: 0 -55px;
+  }
+
+  &_prev {
+    background-position: 0 -23px;
+  }
+}
+
+
+.mv__top-control_wrap {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.mv__top-control {
+  position: absolute;
+}
+
+.mv__top-btn {
+  position: relative;
+  padding: 6px 24px 6px 20px;
+  opacity: 0.4;
+  transition: opacity 0.15s ease-in-out;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.mv__icon_close {
+  background: url(../img/video_icon.png) no-repeat;
+  background-position: 0px 0px;
+  height: 20px;
+  width: 20px;
+}
+
+.mv__icon_min {
+  background: url(../img/video_icon.png) no-repeat;
+  background-position: 0px -24px;
+  height: 5px;
+  width: 20px;
+  margin: 7px 0;
+}
+
+.mv__icon_side {
+  background: url(../img/video_icon.png) no-repeat;
+  background-position: 0 -52px;
+  height: 19px;
+  width: 20px;
+}

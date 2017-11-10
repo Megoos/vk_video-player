@@ -10,12 +10,12 @@ block content
         .mv__box
           .mv__main
             //button left-right
-            .mv__btn-wrap
-              .mv__btn-control.mv__btn-control_prev
-                .mv__pl-control
-            .mv__btn-wrap
-              .mv__btn-control.mv__btn-control_next
-                .mv__pl-control
+            .mv__btn-wrap.mv__btn-wrap_prev
+              .mv__btn-control
+                .mv__pl-control.mv__pl-control_prev
+            .mv__btn-wrap.mv__btn-wrap_next
+              .mv__btn-control
+                .mv__pl-control.mv__pl-control_next
             //window with video
             .mv__player-box
               .pr
@@ -26,11 +26,11 @@ block content
             .mv__top-control_wrap
               .mv__top-control
                 .mv__top-btn
-                  .mv__icon.mv__icon_close
+                  .mv__icon_close
                 .mv__top-btn
-                  .mv__icon.mv__icon_min
+                  .mv__icon_min
                 .mv__top-btn
-                  .mv__icon.mv__icon_side
+                  .mv__icon_side
             //playlist onright at video
             .mv__playlist
               //pleylist header
@@ -44,7 +44,7 @@ block content
               //scrol for list
               .mv__pl-scrol
                 .mv__pl-scrolbar-inner
-              //this same pleylist
+              //this pleylist
               .mv__playlist-list
                 .mv__playlist-cont
                   -flag = true;
@@ -58,46 +58,58 @@ block content
           .mv__info
             .mv__info-wide-colomn
               .mv__title-block
-                .mv__views-count
-                .mv__title Hardwell feat. Jay Sean - Thinking About You
+                .mv__views-count 22 466 просмотров
+                .mv__title Hardwell feat. Jay Sean - Thinking About You (Official Music Video)
               .mv__ation-block
                 .mv__block-wrap
                   button.flat__button
                     .mv__icon.mv__icon_like
                     .mv__action-link Мне нравится
-                  button.flat__button
-                    .mv__icon.mv__icon_like
-                    .mv__action-link Поделится
-                  button.flat__button
-                    .mv__icon.mv__icon_like
-                    .mv__action-link Добавлено
-                  .mv__action-more
+                  button.flat__button.second
+                    .mv__icon.mv__icon_share
+                    .mv__action-link Поделиться
+                  button.flat__button.second
+                    .mv__icon.mv__icon_add
+                    .mv__action-link Добавить к себе
+                  .flat__button.second
                     .mv__action-link Ещё
                     .mv__icon.mv__icon_arrow
+              //about author
               .mv__author-block
                 .mv__block-wrap
                   a.mv__author-photo-wrap
-                    img(src="", alt="").author-photo
+                    img(src="https://pp.userapi.com/c639528/v639528480/65f6f/jlXsrxKHFOU.jpg", alt="").author-photo
                   .mv__author-info
                     .info-author-name
                       a(href="") Михаил Гуськов
                     .info-date 29 окт 2016 в 13:11
-              .mv__description-block
-                .mv__block-wrap     
-                  .mv__description
-                    .mv__description-text
-                      p Multi-platinum-selling artist Jay Sean and Dutch award-winning dance DJ Hardwell release the official music video for their current single ‘Thinking About You’. Premiered on MTV’s Snapchat Discover, the single was one of the most Shazamed songs at the annual Amsterdam Dance Event festival last week, adding to the growing success of the records current popularity. 
+              .mv__description-block 
+                .mv__description
+                  .mv__description-text
+                    p Hardwell feat. Jay Sean - Thinking About You <br> Multi-platinum-selling artist Jay Sean and Dutch award-winning dance DJ Hardwell release the official music video for their current single ‘Thinking About You’. Premiered on MTV’s Snapchat Discover, the single was one of the most Shazamed songs at the annual Amsterdam Dance Event festival last week, adding to the growing success of the records current popularity. 
               .mv__comment-block  
                 .mv__comment
                   a.comment__user-link
-                    img(src="", alt="").comment__photo
+                    img(src="https://pp.userapi.com/c639528/v639528480/65f6f/jlXsrxKHFOU.jpg").comment__photo
                   .mv__comment-placeholder Написать Комментарий...
             .mv__info-narrow-column
               .mv__recom-block
                 .mv__recom-title Другие видео
                 .mv__recom-item
-                  a(href="").mv__recom-img
-                    .recom-item-duration 3:31
+                  a(style="background-image: url('https://sun9-4.userapi.com/c625820/u51001723/video/l_c39a05ba.jpg');").mv__recom-img
+                    .recom-item-duration 3:43
                   .mv__recom-item-info
-                      .mv__recom-item-title Tiesto feat.Martin Garrix - On my Way
-                      .mv__recom-item-views 22343 просмотров
+                      a(href="#").mv__recom-item-title Kygo - Firestone ft. Conrad Sewell
+                      .mv__recom-item-views 36 639 просмотров
+                .mv__recom-item
+                  a(style="background-image: url('https://pp.userapi.com/c841420/v841420961/376d0/EIv0d7NeqeY.jpg')").mv__recom-img
+                    .recom-item-duration 4:06
+                  .mv__recom-item-info
+                      a(href="#").mv__recom-item-title Джазовый кавер на песню Майкла Джексона Thriller от проекта PostmodernJukebox
+                      .mv__recom-item-views 48 699 просмотров   
+                .mv__recom-item
+                  a(style="background-image: url('https://sun9-4.userapi.com/c622721/u37184028/video/l_abe40e89.jpg');").mv__recom-img
+                    .recom-item-duration 3:35
+                  .mv__recom-item-info
+                      a(href="#").mv__recom-item-title Sampha - Too Much (Loston Rework)
+                      .mv__recom-item-views 176 просмотров        
