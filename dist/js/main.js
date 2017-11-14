@@ -1,20 +1,41 @@
 $(function() {
   var section = $(".mv__playlist-list"),
     display = $(".mv__playlist-cont"),
+    scrollBar = $(".mv__pl-scrolbar-inner"),
     scrollPosition = 0;
-  isScroll = true;
+
+  var scrollBarTransform = function(elHeight, marginTop, heightBlock) {
+    scrollBar.css({
+      height: elHeight + "%"
+    });
+
+    var heightBarPx = scrollBar.innerHeight(),
+      barWindow = (heightBlock - heightBarPx) * marginTop;
+
+    scrollBar.css({
+      "margin-top": barWindow + "px"
+    });
+  };
+
+  var heightSection = section.outerHeight(),
+    heighDisplay = display.outerHeight(),
+    heightBar = heightSection / heighDisplay * 100;
+
+  scrollBarTransform(heightBar, 0, heightSection);
 
   var performTransition = function(scroll) {
-    var heightSection = section.outerHeight(),
-      heighDisplay = display.outerHeight(),
-      workWindow = heightSection - heighDisplay;
+    heightSection = section.outerHeight();
+    heighDisplay = display.outerHeight();
+    var workWindow = heightSection - heighDisplay;
+    heightBar = heightSection / heighDisplay * 100;
 
-    console.log(workWindow);
     scrollPosition += scroll;
 
     if (scrollPosition > 0) scrollPosition = 0;
 
     if (scrollPosition <= workWindow) scrollPosition = workWindow;
+
+    scrollBarTransform(heightBar, scrollPosition / workWindow, heightSection);
 
     var position = scrollPosition + "px";
     console.log(position);
@@ -29,9 +50,16 @@ $(function() {
     wheel: function(e) {
       var deltaY = e.originalEvent.deltaY / -10;
       performTransition(deltaY);
-    },
-    touchmove: function(e) {
-      e.preventDefault();
     }
+  });
+
+  var ts;
+  section.bind("touchstart", function(e) {
+    ts = e.originalEvent.touches[0].clientY;
+  });
+
+  section.bind("touchmove", function(e) {
+    var te = e.originalEvent.changedTouches[0].clientY;
+    performTransition((te - ts) / 20);
   });
 });

@@ -66,7 +66,7 @@
   right: 0;
   width: 7px;
   background-color: hsla(0, 0%, 78%, 0.06);
-  z-index: 10;
+  //z-index: 10;
 
   @include tablets {
     margin-left: 114px;
@@ -77,7 +77,8 @@
   margin-top: 0px;
   background-color: #3d3d3d;
   width: 7px;
-  height: 45px;
+  //  height: 100%;
+  max-height: 100%;
   margin-left: 0;
   border-radius: 1px;
   cursor: pointer;
