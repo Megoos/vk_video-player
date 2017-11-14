@@ -50,6 +50,14 @@ $(function() {
     wheel: function(e) {
       var deltaY = e.originalEvent.deltaY / -10;
       performTransition(deltaY);
+    },
+    mouseenter: function() {
+      $("html,body").on("mousewheel", function(e) {
+        e.preventDefault();
+      });
+    },
+    mouseleave: function() {
+      $("html,body").off("mousewheel");
     }
   });
 
