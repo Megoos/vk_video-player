@@ -58,12 +58,14 @@
 
 //scrol
 .mv__pl-scrol {
+  position: absolute;
   margin-top: 0px;
   margin-left: 233px;
-  height: 375px;
+  top: 30px;
+  bottom: 0;
+  right: 0;
   width: 7px;
-  background-color: hsla(0,0%,78%,.06);
-  position: relative;
+  background-color: hsla(0, 0%, 78%, 0.06);
   z-index: 10;
 
   @include tablets {
@@ -71,16 +73,16 @@
   }
 }
 
-.mv__pl-scrolbar-inner {  
+.mv__pl-scrolbar-inner {
   margin-top: 0px;
   background-color: #3d3d3d;
   width: 7px;
   height: 45px;
   margin-left: 0;
   border-radius: 1px;
-  cursor: pointer;  
-  transition: background-color 100ms linear; 
-  
+  cursor: pointer;
+  transition: background-color 100ms linear;
+
   &:hover {
     background-color: #424242;
   }
@@ -94,7 +96,6 @@
   left: 0;
   right: 0;
   overflow: hidden;
-
 }
 
 .mv__playlist-item {
@@ -142,12 +143,12 @@
   bottom: 0px;
   padding: 2px 4px 1px;
   border-radius: 2px 0;
-  background-color: rgba(0,0,0,.6);
-  color: hsla(0,0%,100%,.9);
-  line-height: 15px;  
+  background-color: rgba(0, 0, 0, 0.6);
+  color: hsla(0, 0%, 100%, 0.9);
+  line-height: 15px;
 }
 
-.mv__playlist-item-info{
+.mv__playlist-item-info {
   margin-left: 108px;
   white-space: normal;
 
@@ -156,7 +157,7 @@
   }
 }
 
-.mv__playlist-item-title{
+.mv__playlist-item-title {
   max-height: 34px;
   margin-bottom: 2px;
   display: -webkit-box;
